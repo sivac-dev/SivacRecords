@@ -9039,7 +9039,10 @@ body {
 }
 
 #primaryTitle {
-  font-size: 3em;
+  font-size: 1.5em;
+  color: white;
+  font-family: 'PT Serif', serif;
+
 }
 
 #hiddenMenuTitle {
@@ -9056,8 +9059,6 @@ body {
   color: white;
   font-size: 11pt;
   font-family: 'PT Serif', serif;
-  margin-left: 30px;
-  margin-right: 30px;
 }
 
 @media (min-width:576px;) {
