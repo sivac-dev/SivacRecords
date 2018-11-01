@@ -9018,7 +9018,7 @@ body {
 
 /* Basic styling */
 .top-row {
-  padding-top: 50px;
+  padding-top: 2em;
 }
 
 .embed {
@@ -9038,10 +9038,18 @@ body {
   width:100%;
 }
 
+#primaryTitle {
+  font-size: 3em;
+}
+
+#hiddenMenuTitle {
+  font-size: 2em;
+}
+
 #bootstrap-override h2 a{
   color: white;
-  margin-left: 30px;
-  margin-right: 30px;
+  margin-left: 2%;
+  margin-right: 2%;
 }
 
 #bootstrap-override h2 {
