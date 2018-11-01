@@ -1,0 +1,262 @@
+/* Initial body */
+body {
+  overflow-x: hidden;
+  margin: 0;
+}
+#menuIndex {
+  padding-top: 15px;
+	position:fixed;
+	top:0px;
+	width:100%;
+  background: rgba(0, 0, 0, 0.6);
+	z-index:9999;
+	display: none;
+}
+
+#menu {
+  padding-top: 15px;
+	position:fixed;
+	top:0px;
+	width:100%;
+  background: rgba(0, 0, 0, 0.6);
+	z-index:9999;
+	display: none;
+}
+
+#menu a {
+  color: black;
+}
+
+/* Basic styling */
+.top-row {
+  padding: 50px;
+}
+.embed {
+  display: block;
+  margin: auto;
+  padding-top: 40px;
+}
+.embed1 {
+  display: block;
+  margin: auto;
+  padding-top: 40px;
+  padding-left: 40px;
+  padding-right: 0px;
+}
+.titles {
+  display: block;
+  margin: auto;
+  color: white;
+}
+
+h3 {
+  margin-top: 10px;
+}
+.menu-row {
+  /*padding: 5px;
+  background-color: maroon;
+  opacity: 0.7;*/
+}
+
+p {
+  text-align: right;
+}
+
+.image-scroll {
+  width:100%;
+}
+
+.index h2 a{
+  color: white;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.index h2 {
+  color: white;
+  font-size: 17pt;
+  font-family: 'PT Serif', serif;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+#menu h2 a {
+  color: white;
+}
+
+.gallery h2 a {
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.gallery h2 {
+  text-decoration: none;
+  font-size: 17pt;
+  font-family: 'PT Serif', serif;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.gallery .black {
+  color: black;
+}
+
+
+a:hover {
+  text-decoration: none;
+}
+.parallax img {
+  height:60px;
+}
+
+.parallax {
+    /* The image used */
+    background-image: url("img/Ehlis-Guitar8.jpg");
+
+    /* Set a specific height */
+    min-height: 750px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.midsection {
+  background-color: #312B0D;
+  background-color: #63441D;
+  background-color: #301303;
+  background-color: #260f02;
+background-color: black;
+
+  /*  width: 100%!important; */
+}
+
+.midsection img {
+  width:80%;
+}
+
+.album {
+  width: 200px;
+  padding: 1%;
+  text-align: center;
+  display: inline-block;
+
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  font-size: 18;
+}
+
+#background {
+     background-image: url("img/Ehlis-Guitar8.jpg");
+     min-height: 750px;
+
+     background-attachment: fixed;
+     background-position: left;
+     background-repeat: no-repeat;
+     background-size: cover;
+     position: fixed;
+     top: 0;
+     width: 100vw;
+     height: 100vw;
+     z-index: -2;
+ }
+#imgHeader {
+   height:75px;
+
+ }
+
+ .spread {
+     /* The image used */
+     min-height: 750px;
+     /* Set a specific height */
+
+     /* Create the parallax scrolling effect */
+     background-attachment: fixed;
+     background-position: left;
+     background-repeat: no-repeat;
+     background-size: cover;
+ }
+
+.about img {
+  height: 100%;
+}
+
+.about {
+  background: url("img/Mandolin2.jpg") no-repeat center center fixed;
+  background-size: cover;
+  color: white;
+  padding: 40px;
+  text-align: center;
+}
+
+.about h3 {
+  font-size: 48pt;
+  font-family: 'PT Serif', serif;
+}
+
+.quote {
+  background-color: #260f02;
+  color: white;
+  padding: 100px;
+  font-family: 'PT Serif', serif;
+}
+
+.quote a {
+  text-decoration: none;
+  color: white;
+}
+
+footer {
+  height:40px;
+  background-color: black;
+  width: 100%;
+
+}
+
+footer p {
+  text-align: center;
+  color: white;
+}
+
+.meet {
+  min-height: 500px;
+  background-image: url(img/Ehlis-Wall-BW.jpg);
+  width: 100%;
+}
+
+.title {
+  color: white;
+  text-align: center;
+}
+
+.customContainer {
+  padding-left: 8.3%;
+  padding-right: 8.3%;
+}
+
+.inner
+{
+     display: inline-block;
+}
+
+.outer {
+  text-align: center;
+}
+
+h1 a {
+  color: white;
+  font-family: 'PT Serif', serif;
+  font-size: 48pt;
+  text-decoration: none;
+}
+
+img a {
+  text-align: center;
+}

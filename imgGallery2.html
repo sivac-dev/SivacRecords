@@ -1,0 +1,254 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400;300' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css?family=PT+Serif" rel="stylesheet">
+    <link href='style.css' rel='stylesheet'>
+  </head>
+
+  <style>
+    body {font-family: Arial, Helvetica, sans-serif;}
+
+    #myImg, #myImg2, #myImg3, #myImg4, #myImg5, #myImg6 {
+      border-radius: 5px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+
+    #myImg:hover {opacity: 0.7;}
+    #myImg2:hover {opacity: 0.7;}
+    #myImg3:hover {opacity: 0.7;}
+
+    /* The Modal (background) */
+    .modal {
+      display: none; /* Hidden by default */
+      position: fixed; /* Stay in place */
+      z-index: 1; /* Sit on top */
+      padding-top: 100px; /* Location of the box */
+      left: 0;
+      top: 0;
+      width: 100%; /* Full width */
+      height: 100%; /* Full height */
+      overflow: auto; /* Enable scroll if needed */
+      background-color: rgb(0,0,0); /* Fallback color */
+      background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+    }
+
+    /* Modal Content (image) */
+    .modal-content {
+      margin: auto;
+      display: block;
+      width: 80%;
+      max-width: 700px;
+    }
+
+    /* Caption of Modal Image */
+    #caption {
+      margin: auto;
+      display: block;
+      width: 80%;
+      max-width: 700px;
+      text-align: center;
+      color: #ccc;
+      padding: 10px 0;
+      height: 150px;
+    }
+
+    /* Add Animation */
+    .modal-content, #caption {
+      -webkit-animation-name: zoom;
+      -webkit-animation-duration: 0.6s;
+      animation-name: zoom;
+      animation-duration: 0.6s;
+    }
+
+    @-webkit-keyframes zoom {
+      from {-webkit-transform:scale(0)}
+      to {-webkit-transform:scale(1)}
+    }
+
+    @keyframes zoom {
+      from {transform:scale(0)}
+      to {transform:scale(1)}
+    }
+
+    /* The Close Button */
+    .close {
+      position: absolute;
+      top: 15px;
+      right: 35px;
+      color: #f1f1f1;
+      font-size: 40px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .close:hover,
+    .close:focus {
+      color: #bbb;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    /* 100% Image Width on Smaller Screens */
+    @media only screen and (max-width: 700px){
+      .modal-content {
+          width: 100%;
+      }
+    }
+  </style>
+
+  <body class="gallery">
+    <section id="menu">
+      <div class="text-center">
+        <h2>
+          <a href="#MusicSection">Listen</a> &#160;
+          <a href="imgGallery.html">About</a> &#160;
+          <a href="index.html"><img src="img/SivacTextWhite3.png"></a>
+
+          <a href="imgGallery.html">Artists</a> &#160;
+          <a href="Sivac1.html">Store</a>
+        </h2>
+      </div>
+    </section>
+
+    <section id="Section-1">
+      <!--<div class="parallax">-->
+
+
+      <div class="row top-row text-center">
+        <div class="col-12">
+          <h2>
+            <!--<a href="#MusicSection">Listen</a> &#160;
+            <a href="imgGallery.html">About</a> &#160;-->
+            <a href="index.html"><img id="imgHeader"src="img/SivacText3.png"></a>
+            <!--<a href="imgGallery.html">Artists</a> &#160;
+            <a href="Sivac1.html">Store</a>-->
+          </h2>
+          <h2>
+            <a class="black" href="#MusicSection">Listen</a>
+            <a class="black"href="imgGallery.html">About</a>
+            <a class="black"href="imgGallery.html">Artists</a>
+            <a class="black"href="Sivac1.html">Store</a>
+          </h2>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="modalGallery">
+      <div class="row">
+        <div class="col-4 text-center">
+          <img id="myImg" src="img/gallery/JohnEhlis.jpg" alt="John Ehlis" style="width:100%;">
+        </div>
+        <div class="col-4 text-center">
+          <img id="myImg2" src="img/gallery/ChrisWhite.jpg" alt="Chris White" style="width:100%;">
+        </div>
+        <div class="col-4 text-center">
+          <img id="myImg3" src="img/gallery/MazzSwift.jpg" alt="Mazz Swift" style="width:100%;">
+        </div>
+
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+          <span class="close">&times;</span>
+          <img class="modal-content" id="img01">
+          <div id="caption"></div>
+        </div>
+        <div id="myModal" class="modal">
+          <span class="close">&times;</span>
+          <img class="modal-content" id="img02">
+          <div id="caption"></div>
+        </div>
+        <div id="myModal" class="modal">
+          <span class="close">&times;</span>
+          <img class="modal-content" id="img03">
+          <div id="caption"></div>
+      </div>
+
+    </section>
+
+</body>
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+<!--Reveals navigation on scroll-->
+<script type="text/javascript">
+(function($) {
+  $(document).ready(function(){
+      $(window).scroll(function(){
+          if ($(this).scrollTop() > 135) {
+              $('#menu').fadeIn(500);
+          } else {
+              $('#menu').fadeOut(250);
+          }
+      });
+  });
+})(jQuery);
+
+
+
+//Modal script
+// Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById('myImg');
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+    modal.style.display = "none";
+}
+
+  //img2
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById('myImg2');
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+    modal.style.display = "none";
+}
+
+
+
+  //img3
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById('myImg3');
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+    modal.style.display = "none";
+}
+</script>
+
+</script>
+</html>

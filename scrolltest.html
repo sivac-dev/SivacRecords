@@ -1,0 +1,150 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400;300' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css?family=PT+Serif" rel="stylesheet">
+    <link href='style.css' rel='stylesheet'>
+  </head>
+  <body>
+    <section id="menu">
+      <div class="text-center">
+    <h2>
+      <a href="#MusicSection">Listen</a> &#160;
+      <a href="imgGallery.html">About</a> &#160;
+      <a href="index.html"><img src="img/SivacTextWhite3.png"></a>
+
+      <a href="imgGallery.html">Artists</a> &#160;
+      <a href="Sivac1.html">Store</a>
+    </h2>
+  </div>
+  </section>
+    <section id="Section-1">
+      <!--<div class="parallax">--><div id="background">
+        <div class="row top-row text-center">
+          <div class="col-12">
+            <h2>
+              <!--<a href="#MusicSection">Listen</a> &#160;
+              <a href="imgGallery.html">About</a> &#160;-->
+              <a href="index.html"><img src="img/SivacTextWhite3.png"></a>
+              <!--<a href="imgGallery.html">Artists</a> &#160;
+              <a href="Sivac1.html">Store</a>-->
+            </h2>
+            <h2>
+              <a href="#MusicSection">Listen</a> &#160;
+              <a href="imgGallery.html">About</a> &#160;
+              <a href="imgGallery.html">Artists</a> &#160;
+              <a href="Sivac1.html">Store</a>
+            </h2>
+
+        </div>
+      </div>
+    </section>
+
+
+    <section id="MusicSection">
+      <div class="row midsection">
+        <div class="embed">
+          <iframe style="border: 10; width: 350px; height: 350px;" src="https://bandcamp.com/EmbeddedPlayer/album=3977585361/size=large/bgcol=333333/linkcol=e99708/minimal=true/transparent=true/" seamless><a href="http://johnehlis.bandcamp.com/album/in-this-lifetime">In This Lifetime by John Ehlis</a></iframe>
+        </div>
+        <div class="embed">
+          <iframe style="border: 10; width: 350px; height: 350px;" src="https://bandcamp.com/EmbeddedPlayer/album=3677284961/size=large/bgcol=333333/linkcol=e99708/minimal=true/transparent=true/" seamless><a href="http://johnehlis.bandcamp.com/album/along-the-way">Along the Way by John Ehlis</a></iframe>      </div>
+      <div class="embed">
+        <iframe style="border: 10; width: 350px; height: 350px;" src="https://bandcamp.com/EmbeddedPlayer/album=2869782932/size=large/bgcol=333333/linkcol=e99708/minimal=true/transparent=true/" seamless><a href="http://johnehlis.bandcamp.com/album/san-carlos">San Carlos by John Ehlis</a></iframe>      </div>
+  </div>
+
+    <div class="row midsection">
+      <div class="titles text-center">
+        <h3>In This Lifetime (2015)</h3>
+      </div>
+      <div class="titles">
+<h3>Along the Way (2012)</h3>
+    </div>
+    <div class="titles">
+<h3>San Carlos (2002)</h3>
+    </div>
+  </div>
+
+      <div class="row midsection">
+        <div class="col-7"></div>
+        <div class="col-4">        <a href="https://toe-music.bandcamp.com/album/new-sentimentality"><p>>>More Releases</p></a></div>
+
+        <div class="col-1"></div>
+      </div>
+
+
+
+<!--<iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/484423749&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>-->
+<!--<iframe src="https://open.spotify.com/embed/album/0HAdB95fMVAojYTtQ74JDc" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>        </div>-->
+        <!--<div class="col-4 album">
+          <img src="img/InThisLifetime.jpg"><h2>In This Lifetime</h2>
+        </div>
+        <div class="col-4 album">
+          <img src="img/SanCarlos.jpg"><h2>San Carlos</h2>
+        </div>
+        <div class="col-4 album">
+          <img src="img/AlongTheWay.jpg"><h2>Along the Way</h2>
+        </div>-->
+        <div class="row midsection">
+          <br>
+          <!--<div class="col-3"><img class="album" src="img/InThisLifetime.jpg"><h3 class="text-center">In My Lifetime (2015)</h3>
+            <p class="text-center"><a href="index.html">Shop</a> - <a href="index.html">Reviews</a> - <a href="index.html">Credits</a></div>-->
+  <div class="col-3"></div>
+          <div class="col-3">
+
+          </div>
+  <div class="col-3">
+
+          </div>
+          <div class="col-3"><br></div>
+
+        </div>
+
+      <div style="height:200px; background-color: black;" class="row"><br>
+<div class="col-5"></div><div class="col-2"><p>© 2018 John Ehlis</p></div><div class="col-5"></div>
+        </div>
+
+
+        <br><br><br><br><br><br><br><br>
+      </div>
+<div id="background"></div>
+
+    </section>
+  <script src="http://code.jquery.com/jquery-latest.js"></script>
+</body>
+<!--Reveals navigation on scroll-->
+<script type="text/javascript">
+(function($) {
+    $(document).ready(function(){
+        $(window).scroll(function(){
+            if ($(this).scrollTop() > 140) {
+                $('#menu').fadeIn(500);
+            } else {
+                $('#menu').fadeOut(250);
+            }
+        });
+    });
+})(jQuery);
+
+
+var bg = document.querySelector("#background");
+
+    function setTranslate(xPos, yPos, el) {
+        el.style.transform = "translate3d(" + xPos + ", " + yPos + "px, 0)";
+    }
+
+    window.addEventListener("DOMContentLoaded", scrollLoop, false);
+
+    var xScrollPosition;
+    var yScrollPosition;
+
+    function scrollLoop() {
+        xScrollPosition = window.scrollX;
+        yScrollPosition = window.scrollY;
+
+        setTranslate(0, yScrollPosition * -1.5, bg);
+
+        requestAnimationFrame(scrollLoop);
+    }
+</script>
+</html>
