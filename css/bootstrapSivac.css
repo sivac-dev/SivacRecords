@@ -59,7 +59,7 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
 }
 
 body {
-  overflow: hidden;
+  overflow-x: hidden;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-size: 1rem;
@@ -9136,10 +9136,10 @@ li {
    height:75px;
  }
 #bootstrap-override body {
-  overflow: hidden !important;
+
 }
  .spread {
-   overflow: hidden !important;
+
      /* The image used
      min-height: 750px;*/
      height: 100vh;
@@ -9255,13 +9255,13 @@ h3 {
 }
 
 .Container40px {
-  padding-left: 40px;
-  padding-right: 40px;
+  padding-left: 3%;
+  padding-right: 3%;
 }
 
 .Container120px {
-  padding-left: 120px;
-  padding-right: 120px;
+  padding-left: 10%;
+  padding-right: 10%;
 }
 
 .ImgGallery {
@@ -9270,13 +9270,13 @@ h3 {
 }
 
 .embedleft {
-  padding-left: 120px;
-  padding-right: 60px;
+  padding-left: 10%;
+  padding-right: 5%;
 }
 
 .embedright {
-  padding-right: 120px;
-  padding-left: 60px;
+  padding-right: 10%;
+  padding-left: 5%;
 }
 
 .rightoh {
