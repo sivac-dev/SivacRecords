@@ -9175,6 +9175,7 @@ li {
 .about {
   background: url("../img/IMG_9181.JPG") no-repeat center center fixed;
   background-size: cover;
+  overflow-x:hidden;
   color: white;
   text-align: center;
 }

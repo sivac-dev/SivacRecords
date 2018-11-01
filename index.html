@@ -54,10 +54,10 @@
   <div class="Container40px">
     <!--Row for first two albums-->
     <div class="row midsection">
-      <div class="col embedleft text-center">
+      <div class="col embedleft embedresponsive text-center">
         <iframe src="https://bandcamp.com/EmbeddedPlayer/album=3977585361/size=large/bgcol=333333/linkcol=e99708/minimal=true/transparent=true/" seamless><a href="http://johnehlis.bandcamp.com/album/in-this-lifetime">In This Lifetime by John Ehlis</a></iframe>
       </div>
-      <div class="col embedright text-center">
+      <div class="col embedright embedresponsive text-center">
         <iframe src="https://bandcamp.com/EmbeddedPlayer/album=3677284961/size=large/bgcol=333333/linkcol=e99708/minimal=true/transparent=true/" seamless><a href="http://johnehlis.bandcamp.com/album/along-the-way">Along the Way by John Ehlis</a></iframe>
       </div>
     </div>
@@ -65,19 +65,19 @@
     <!--New row for album titles-->
     <div class="row">
       <div class="col">
-        <h4 class="text-center embedleft embedresponsive albumTitle text-center">In This Lifetime (2015)<br><div class="icon-menu">Reviews</div></h4>
+        <h4 class="embedleft embedresponsive albumTitle text-center">In This Lifetime (2015)<br><div class="icon-menu">Reviews</div></h4>
       </div>
       <div class="col">
-        <h4 class="text-center embedright embedresponsive albumTitle text-center">Along The Way (2012)<br>Reviews</h4>
+        <h4 class="embedright embedresponsive albumTitle text-center">Along The Way (2012)<br>Reviews</h4>
       </div>
     </div>
 
     <!--Second row of albums-->
     <div class="row">
-      <div class="col-md-6 col-sm-12 embedleft embedresponsive text-center">
+      <div class="col embedleft embedresponsive text-center">
         <iframe src="https://bandcamp.com/EmbeddedPlayer/album=2869782932/size=large/bgcol=333333/linkcol=e99708/minimal=true/transparent=true/" seamless><a href="http://johnehlis.bandcamp.com/album/san-carlos">San Carlos by John Ehlis</a></iframe>
       </div>
-      <div class="col-md-6 col-sm-12 embedright embedresponsive text-center">
+      <div class="col embedright embedresponsive text-center">
         <iframe src="https://bandcamp.com/EmbeddedPlayer/album=990415218/size=large/bgcol=333333/linkcol=e99708/tracklist=false/transparent=true/" seamless><a href="http://johnehlis.bandcamp.com/album/john-ehlis-ensemble">John Ehlis Ensemble by John Ehlis</a></iframe>
       </div>
     </div>
@@ -85,11 +85,11 @@
 
   <!--Another new row for the second pair of album titles-->
   <div class="row">
-    <div class="col-md-6 col-sm-12 ">
-      <h4 class="text-center embedleft embedresponsive albumTitle">San Carlos (2002)<br>Reviews</h4>
+    <div class="col">
+      <h4 class="embedleft embedresponsive albumTitle text-center">San Carlos (2002)<br>Reviews</h4>
     </div>
-    <div class="col-md-6col-sm-12  ">
-      <h4 class="text-center embedright embedresponsive albumTitle">John Ehlis Ensemble (1996)<br>Reviews</h4>
+    <div class="col">
+      <h4 class="embedright embedresponsive albumTitle text-center">John Ehlis Ensemble (1996)<br>Reviews</h4>
     </div>
   </div>
 </div> <!--Container40px ends-->
@@ -390,28 +390,6 @@
 
 
 
-
-
-    //pt2- return to this soon, it doesn't work
-        var bg2 = document.querySelector("#bg2");
-
-          function setTranslate(xPos, yPos, el) {
-              el.style.transform = "translate3d(" + xPos + ", " + yPos + "px, 0)";
-          }
-
-          window.addEventListener("DOMContentLoaded", scrollLoop, false);
-
-          var xScrollPosition;
-          var yScrollPosition;
-
-          function scrollLoop() {
-              xScrollPosition = window.scrollX;
-              yScrollPosition = window.scrollY;
-
-              setTranslate(0, yScrollPosition * -0.3, bg2);
-
-              requestAnimationFrame(scrollLoop);
-          }
 
 
 
