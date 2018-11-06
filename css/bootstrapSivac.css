@@ -9042,7 +9042,27 @@ body {
   font-size: 1.5em;
   color: white;
   font-family: 'PT Serif', serif;
+}
 
+@media (min-width:576px;) {
+  #bootstrap-override h2 {
+      font-size: 14pt;
+    }
+}
+
+@media (min-width:766px;) {
+  #bootstrap-override h2 {
+      font-size: 17pt;
+    }
+}
+
+@media (min-width:992px;) {
+  #primaryTitle {
+      font-size: 3em;
+    }
+  #bootstrap-override h2 {
+      font-size: 17pt;
+    }
 }
 
 #hiddenMenuTitle {
@@ -9059,18 +9079,6 @@ body {
   color: white;
   font-size: 11pt;
   font-family: 'PT Serif', serif;
-}
-
-@media (min-width:576px;) {
-  #bootstrap-override h2 {
-      font-size: 14pt;
-    }
-}
-
-@media (min-width:766px;) {
-  #bootstrap-override h2 {
-      font-size: 17pt;
-    }
 }
 
 a:hover {
